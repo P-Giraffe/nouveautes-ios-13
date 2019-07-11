@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios'>
+    <pages>
+        <page name='Result'/>
+        <page name='strings'/>
+        <page name='unkownCase'/>
+        <page name='struct_init'/>
+        <page name='propertyWrapper'/>
+    </pages>
+</playground>
