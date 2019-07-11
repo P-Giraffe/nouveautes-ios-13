@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        self.overrideUserInterfaceStyle = .dark
         if self.traitCollection.userInterfaceStyle == .dark {
             
         } else {
