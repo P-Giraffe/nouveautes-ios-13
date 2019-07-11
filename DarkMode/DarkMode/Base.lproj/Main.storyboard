@@ -3,6 +3,7 @@
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14790.5"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
         <capability name="iOS 13.0 system colors" minToolsVersion="11.0"/>
@@ -17,43 +18,43 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="QoM-eu-GY8">
-                                <rect key="frame" x="10" y="44" width="355" height="100"/>
+                                <rect key="frame" x="10" y="44" width="355" height="200"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Devenez créateur d'apps mobiles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2DX-Pe-8P8">
-                                <rect key="frame" x="5" y="137" width="365" height="31.333333333333343"/>
+                                <rect key="frame" x="5" y="237" width="365" height="31.333333333333314"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="2ba-t2-j10">
-                                <rect key="frame" x="20" y="178.33333333333337" width="335" height="350"/>
+                                <rect key="frame" x="20" y="278.33333333333331" width="335" height="349.99999999999994"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nxz-dM-44w">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="83.666666666666671"/>
-                                        <color key="backgroundColor" red="0.60060912369999997" green="0.22627517580000001" blue="0.42813345790000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" name="PGF_purple"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <state key="normal" title="Cours iOS">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vx3-hr-AeN">
-                                        <rect key="frame" x="0.0" y="88.666666666666657" width="335" height="84"/>
-                                        <color key="backgroundColor" red="0.60060912369999997" green="0.22627517580000001" blue="0.42813345790000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="0.0" y="88.666666666666686" width="335" height="84"/>
+                                        <color key="backgroundColor" name="PGF_purple"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <state key="normal" title="Cours Android">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UXv-A4-0zT">
-                                        <rect key="frame" x="0.0" y="177.66666666666666" width="335" height="83.666666666666657"/>
-                                        <color key="backgroundColor" red="0.60060912369999997" green="0.22627517580000001" blue="0.42813345790000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="0.0" y="177.66666666666669" width="335" height="83.666666666666686"/>
+                                        <color key="backgroundColor" name="PGF_purple"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <state key="normal" title="Cours Git">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rWR-VO-fSs">
-                                        <rect key="frame" x="0.0" y="266.33333333333337" width="335" height="83.666666666666686"/>
-                                        <color key="backgroundColor" red="0.60060912369999997" green="0.22627517580000001" blue="0.42813345790000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="0.0" y="266.33333333333331" width="335" height="83.666666666666686"/>
+                                        <color key="backgroundColor" name="PGF_purple"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <state key="normal" title="Coaching">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -65,7 +66,7 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHO-qI-WDl">
-                                <rect key="frame" x="20" y="533.33333333333337" width="335" height="239.66666666666663"/>
+                                <rect key="frame" x="20" y="633.33333333333337" width="335" height="139.66666666666663"/>
                                 <string key="text">Créez vos propres apps pour iPhone et Android
 Tout ce que vous devez savoir pour apprendre à programmer des applications mobiles, dans des cours accessibles à tous.</string>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
@@ -99,5 +100,8 @@ Tout ce que vous devez savoir pour apprendre à programmer des applications mobi
     </scenes>
     <resources>
         <image name="logo" width="408.66665649414062" height="100"/>
+        <namedColor name="PGF_purple">
+            <color red="0.38823529411764707" green="0.14117647058823529" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
