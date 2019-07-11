@@ -12,7 +12,18 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        if self.traitCollection.userInterfaceStyle == .dark {
+            
+        } else {
+            
+        }
+    }
+    
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        if self.traitCollection.hasDifferentColorAppearance(comparedTo: previousTraitCollection) {
+            
+        }
     }
 
 
