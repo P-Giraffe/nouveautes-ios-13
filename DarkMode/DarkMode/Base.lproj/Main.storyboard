@@ -17,16 +17,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="QoM-eu-GY8">
-                                <rect key="frame" x="10" y="44" width="355" height="200"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="QoM-eu-GY8">
+                                <rect key="frame" x="10" y="44" width="355" height="98"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="98" id="GXn-4F-mhp"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Devenez créateur d'apps mobiles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2DX-Pe-8P8">
-                                <rect key="frame" x="5" y="237" width="365" height="31.333333333333314"/>
+                                <rect key="frame" x="5" y="135" width="365" height="31.333333333333343"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="2ba-t2-j10">
-                                <rect key="frame" x="20" y="278.33333333333331" width="335" height="349.99999999999994"/>
+                                <rect key="frame" x="20" y="176.33333333333337" width="335" height="350"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nxz-dM-44w">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="83.666666666666671"/>
@@ -37,7 +40,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vx3-hr-AeN">
-                                        <rect key="frame" x="0.0" y="88.666666666666686" width="335" height="84"/>
+                                        <rect key="frame" x="0.0" y="88.666666666666657" width="335" height="84"/>
                                         <color key="backgroundColor" name="PGF_purple"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <state key="normal" title="Cours Android">
@@ -45,7 +48,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UXv-A4-0zT">
-                                        <rect key="frame" x="0.0" y="177.66666666666669" width="335" height="83.666666666666686"/>
+                                        <rect key="frame" x="0.0" y="177.66666666666666" width="335" height="83.666666666666657"/>
                                         <color key="backgroundColor" name="PGF_purple"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <state key="normal" title="Cours Git">
@@ -53,7 +56,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rWR-VO-fSs">
-                                        <rect key="frame" x="0.0" y="266.33333333333331" width="335" height="83.666666666666686"/>
+                                        <rect key="frame" x="0.0" y="266.33333333333337" width="335" height="83.666666666666686"/>
                                         <color key="backgroundColor" name="PGF_purple"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <state key="normal" title="Coaching">
@@ -65,8 +68,8 @@
                                     <constraint firstAttribute="height" constant="350" id="zw4-wu-hVn"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHO-qI-WDl">
-                                <rect key="frame" x="20" y="633.33333333333337" width="335" height="139.66666666666663"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="748" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHO-qI-WDl">
+                                <rect key="frame" x="20" y="531.33333333333337" width="335" height="241.66666666666663"/>
                                 <string key="text">Créez vos propres apps pour iPhone et Android
 Tout ce que vous devez savoir pour apprendre à programmer des applications mobiles, dans des cours accessibles à tous.</string>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
@@ -101,7 +104,7 @@ Tout ce que vous devez savoir pour apprendre à programmer des applications mobi
     <resources>
         <image name="logo" width="408.66665649414062" height="100"/>
         <namedColor name="PGF_purple">
-            <color red="0.38823529411764707" green="0.14117647058823529" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.60392156862745094" green="0.22745098039215686" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
