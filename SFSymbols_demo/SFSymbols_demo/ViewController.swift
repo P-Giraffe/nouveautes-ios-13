@@ -11,13 +11,14 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
-    
     @IBOutlet weak var button: UIButton!
-    
     @IBOutlet weak var label: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        guard let tornado = UIImage(systemName: "tornado") else { return }
+        imageView.image = tornado
+        button.setImage(UIImage(systemName: "snow"), for: .normal)
     }
 
 
