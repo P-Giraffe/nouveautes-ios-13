@@ -22,7 +22,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="59d-6b-kxM">
-                                <rect key="frame" x="10" y="100" width="394" height="219"/>
+                                <rect key="frame" x="10" y="100" width="394" height="219.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIImageView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="77e-n6-CFz">
                                         <rect key="frame" x="0.0" y="0.0" width="148" height="31.5"/>
@@ -31,26 +31,27 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flag" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4TQ-rE-hMl">
-                                        <rect key="frame" x="0.0" y="44" width="19" height="19"/>
+                                        <rect key="frame" x="0.0" y="41.5" width="24.5" height="24.5"/>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="unspecified" scale="large" weight="heavy"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIButton" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aly-rC-563">
-                                        <rect key="frame" x="0.0" y="75.5" width="99" height="31.5"/>
+                                        <rect key="frame" x="0.0" y="76" width="99" height="31.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdB-L3-WeH">
-                                        <rect key="frame" x="0.0" y="119" width="89.5" height="24"/>
+                                        <rect key="frame" x="0.0" y="119.5" width="89.5" height="24"/>
                                         <state key="normal" title="Pompiers" image="18.circle" catalog="system"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NSAttributedString" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqH-B7-vPr">
-                                        <rect key="frame" x="0.0" y="155" width="213" height="31.5"/>
+                                        <rect key="frame" x="0.0" y="155.5" width="213" height="31.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oaE-f1-Xqy">
-                                        <rect key="frame" x="0.0" y="198.5" width="42" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="199" width="42" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
