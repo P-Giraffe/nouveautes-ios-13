@@ -8,7 +8,7 @@ Main application view controller.
 import UIKit
 import AuthenticationServices
 
-class ResultViewController: UIViewController {
+class ResultViewController: UIViewController, ASAuthorizationControllerDelegate {
     
     @IBOutlet weak var userIdentifierLabel: UILabel!
     @IBOutlet weak var givenNameLabel: UILabel!
@@ -24,6 +24,12 @@ class ResultViewController: UIViewController {
     @IBAction func signOutButtonPressed() {
         // For the purpose of this demo app, delete the user identifier that was previously stored in the keychain.
         KeychainItem.deleteUserIdentifierFromKeychain()
+        
+//        let logoutRequest = ASAuthorizationAppleIDProvider().createRequest()
+//        logoutRequest.requestedOperation = .operationLogout
+//        let controller = ASAuthorizationController(authorizationRequests: [logoutRequest])
+//        controller.delegate = self
+//        controller.performRequests()
         
         // Clear the user interface.
         userIdentifierLabel.text = ""
