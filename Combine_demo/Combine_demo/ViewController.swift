@@ -17,7 +17,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        $searchValue.sink { (newSearchValue) in
+        $searchValue
+            .map({ (newValue) -> String in
+            return newValue.capitalized
+        })
+            .map({ (newValueCapitalized) -> Int in
+                return newValueCapitalized.count
+            })
+            .sink { (newSearchValue) in
             self.ui_statusLabel.text = #"Recherche de "\#(newSearchValue)" ..."#
         }
     }
