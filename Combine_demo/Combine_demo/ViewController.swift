@@ -7,14 +7,24 @@
 //
 
 import UIKit
+import Combine
 
 class ViewController: UIViewController {
 
+    @Published var searchValue:String = ""
+    
+    @IBOutlet weak var ui_statusLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        $searchValue.sink { (newSearchValue) in
+            self.ui_statusLabel.text = #"Recherche de "\#(newSearchValue)" ..."#
+        }
     }
 
-
+    @IBAction func searchInputValueChanged(_ sender: UITextField) {
+        searchValue = sender.text ?? ""
+    }
+    
 }
 
