@@ -23,7 +23,7 @@ class ViewController: UIViewController {
             .sink { (newSearchValue) in
             self.ui_statusLabel.text = #"Recherche de "\#(newSearchValue)" ..."#
         }
-        subscription.cancel()
+        //subscription.cancel()
     }
 
     @IBAction func searchInputValueChanged(_ sender: UITextField) {
