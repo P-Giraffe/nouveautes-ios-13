@@ -21,9 +21,7 @@ class ViewController: UIViewController {
             .map({ (newValue) -> String in
             return newValue.capitalized
         })
-            .map({ (newValueCapitalized) -> Int in
-                return newValueCapitalized.count
-            })
+            .debounce(for: .milliseconds(500), scheduler: RunLoop.main)
             .sink { (newSearchValue) in
             self.ui_statusLabel.text = #"Recherche de "\#(newSearchValue)" ..."#
         }
