@@ -17,14 +17,13 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        $searchValue
-            .map({ (newValue) -> String in
-            return newValue.capitalized
-        })
+        let subscription = $searchValue
+            .map({ (newValue) -> String in newValue.capitalized })
             .debounce(for: .milliseconds(500), scheduler: RunLoop.main)
             .sink { (newSearchValue) in
             self.ui_statusLabel.text = #"Recherche de "\#(newSearchValue)" ..."#
         }
+        subscription.cancel()
     }
 
     @IBAction func searchInputValueChanged(_ sender: UITextField) {
