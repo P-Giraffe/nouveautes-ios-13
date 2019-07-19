@@ -6,5 +6,6 @@
         <page name='unkownCase'/>
         <page name='struct_init'/>
         <page name='propertyWrapper'/>
+        <page name='OpaqueTypes'/>
     </pages>
 </playground>
