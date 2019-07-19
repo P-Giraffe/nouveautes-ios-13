@@ -12,7 +12,10 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text("Purple Giraffe FTW!")
-            Text(/*@START_MENU_TOKEN@*/"Placeholder"/*@END_MENU_TOKEN@*/)
+                .font(.title)
+            Text("Les développeurs de l'ère du mobile")
+                .font(.subheadline)
+                .foregroundColor(.secondary)
         }
     }
 }
