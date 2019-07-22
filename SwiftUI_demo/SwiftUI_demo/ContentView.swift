@@ -13,9 +13,12 @@ struct ContentView: View {
         VStack {
             Text("Purple Giraffe FTW!")
                 .font(.title)
-            Text("Les développeurs de l'ère du mobile")
-                .font(.subheadline)
-                .foregroundColor(.secondary)
+                HStack {
+                    Image(systemName: "circle")
+                    Text("Les développeurs de l'ère du mobile")
+                        .font(.subheadline)
+                        .foregroundColor(.secondary)
+                }
         }
     }
 }
