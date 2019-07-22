@@ -17,16 +17,7 @@ struct ContentView: View {
                 .aspectRatio(contentMode: .fit)
                 .frame(height:100)
             
-            HStack {
-                Image("achabat")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 50, height: 50)
-                    .clipped()
-                
-                Text("Alain Chabat")
-                Spacer()
-            }
+            HostRow()
             Spacer()
         }
         
@@ -41,3 +32,5 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 #endif
+
+
