@@ -13,12 +13,14 @@ struct ContentView: View {
         VStack {
             Text("Purple Giraffe FTW!")
                 .font(.title)
-                HStack {
-                    Image(systemName: "circle")
-                    Text("Les développeurs de l'ère du mobile")
-                        .font(.subheadline)
-                        .foregroundColor(.secondary)
-                }
+            
+            HStack {
+                Image(systemName: "circle")
+                Text("Les développeurs de l'ère du mobile")
+                    .font(.subheadline)
+                    .foregroundColor(.secondary)
+            }
+            Spacer()
         }
     }
 }
@@ -26,7 +28,13 @@ struct ContentView: View {
 #if DEBUG
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+            ContentView()
+                .environment(\.sizeCategory, .extraSmall)
+            ContentView()
+                .environment(\.sizeCategory, .extraLarge)
+        }.previewLayout(.fixed(width: 500, height: 80))
     }
 }
 #endif
