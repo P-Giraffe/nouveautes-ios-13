@@ -9,15 +9,16 @@
 import SwiftUI
 
 struct HostRow: View {
+    var host:Host
     var body: some View {
         HStack {
-            Image("achabat")
+            Image(host.imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 50, height: 50)
                 .clipped()
             
-            Text("Alain Chabat")
+            Text(host.name)
             Spacer()
         }
     }
@@ -26,7 +27,10 @@ struct HostRow: View {
 #if DEBUG
 struct HostRow_Previews: PreviewProvider {
     static var previews: some View {
-        HostRow().previewLayout(.fixed(width: 200, height: 50))
+        Group {
+            HostRow(host: Host(name: "Alain Chabat", imageName: "achabat", bio: ""))
+            HostRow(host: Host(name: "Marina Foïs", imageName: "mfois", bio: ""))
+        }.previewLayout(.fixed(width: 200, height: 50))
     }
 }
 #endif

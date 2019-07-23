@@ -18,7 +18,7 @@ struct ContentView: View {
                     .aspectRatio(contentMode: .fit)
                     .frame(height:100)
                 NavigationLink(destination: HostDetails()) {
-                    HostRow()
+                    HostRow(host: Host(name: "Alain Chabat", imageName: "achabat", bio: ""))
                 }.buttonStyle(.plain)
                 Spacer()
             }

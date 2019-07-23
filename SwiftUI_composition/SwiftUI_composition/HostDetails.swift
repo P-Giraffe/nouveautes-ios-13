@@ -9,14 +9,18 @@
 import SwiftUI
 
 struct HostDetails: View {
+    @State var displayHelp:Bool = false
     var body: some View {
         VStack {
             Image("achabat")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
+            if displayHelp == true {
+                Text("OK, j'appelle le Grand Miam!")
+            }
             Spacer()
         }.navigationBarTitle("Alain Chabat")
-            .navigationBarItems(trailing: Button(action: { print("J'appelle le Grand Miam") }, label: { Text("Aide")}))
+            .navigationBarItems(trailing: Button(action: { self.displayHelp.toggle() }, label: { Text("Aide")}))
     }
 }
 
