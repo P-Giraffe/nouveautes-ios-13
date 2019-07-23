@@ -15,6 +15,7 @@
 		F81DD0D222E6159A00F10370 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F81DD0D022E6159A00F10370 /* LaunchScreen.storyboard */; };
 		F81DD0DA22E61B4600F10370 /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81DD0D922E61B4600F10370 /* Host.swift */; };
 		F86E656822E6261000528804 /* HostRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E656722E6261000528804 /* HostRow.swift */; };
+		F86E656A22E6277E00528804 /* HostDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E656922E6277E00528804 /* HostDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		F81DD0D322E6159A00F10370 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F81DD0D922E61B4600F10370 /* Host.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Host.swift; sourceTree = "<group>"; };
 		F86E656722E6261000528804 /* HostRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostRow.swift; sourceTree = "<group>"; };
+		F86E656922E6277E00528804 /* HostDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				F81DD0C722E6159800F10370 /* SceneDelegate.swift */,
 				F81DD0C922E6159800F10370 /* ContentView.swift */,
 				F86E656722E6261000528804 /* HostRow.swift */,
+				F86E656922E6277E00528804 /* HostDetails.swift */,
 				F81DD0CB22E6159A00F10370 /* Assets.xcassets */,
 				F81DD0D022E6159A00F10370 /* LaunchScreen.storyboard */,
 				F81DD0D322E6159A00F10370 /* Info.plist */,
@@ -162,6 +165,7 @@
 			files = (
 				F86E656822E6261000528804 /* HostRow.swift in Sources */,
 				F81DD0C622E6159800F10370 /* AppDelegate.swift in Sources */,
+				F86E656A22E6277E00528804 /* HostDetails.swift in Sources */,
 				F81DD0C822E6159800F10370 /* SceneDelegate.swift in Sources */,
 				F81DD0CA22E6159800F10370 /* ContentView.swift in Sources */,
 				F81DD0DA22E61B4600F10370 /* Host.swift in Sources */,

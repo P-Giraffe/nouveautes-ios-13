@@ -11,16 +11,18 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
-        VStack {
-            Image("logo_burger_quiz")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(height:100)
-            
-            HostRow()
-            Spacer()
+        NavigationView {
+            VStack {
+                Image("logo_burger_quiz")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(height:100)
+                NavigationLink(destination: HostDetails()) {
+                    HostRow()
+                }.buttonStyle(.plain)
+                Spacer()
+            }
         }
-        
     }
     
 }
