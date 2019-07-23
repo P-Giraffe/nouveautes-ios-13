@@ -16,6 +16,7 @@ struct HostDetails: View {
                 .aspectRatio(contentMode: .fit)
             Spacer()
         }.navigationBarTitle("Alain Chabat")
+            .navigationBarItems(trailing: Button(action: { print("J'appelle le Grand Miam") }, label: { Text("Aide")}))
     }
 }
 
