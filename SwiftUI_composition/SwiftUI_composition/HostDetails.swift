@@ -11,20 +11,18 @@ import SwiftUI
 struct HostDetails: View {
     var body: some View {
         VStack {
-            Text("Alain Chabat")
-                .font(.largeTitle)
             Image("achabat")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
             Spacer()
-        }
+        }.navigationBarTitle("Alain Chabat")
     }
 }
 
 #if DEBUG
 struct HostDetails_Previews: PreviewProvider {
     static var previews: some View {
-        HostDetails()
+        NavigationView { HostDetails() }
     }
 }
 #endif

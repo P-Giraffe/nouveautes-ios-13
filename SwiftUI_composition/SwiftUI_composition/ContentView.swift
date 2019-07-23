@@ -22,6 +22,8 @@ struct ContentView: View {
                 }.buttonStyle(.plain)
                 Spacer()
             }
+                .navigationBarTitle("")
+                .navigationBarHidden(true)
         }
     }
     
