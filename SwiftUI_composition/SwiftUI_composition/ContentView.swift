@@ -20,6 +20,7 @@ class UserSettings : BindableObject {
 }
 
 struct ContentView: View {
+    @Environment(\.colorScheme) var mode
     @ObjectBinding var userSettings = UserSettings()
     @State var host = hostList[0]
     var body: some View {
@@ -33,11 +34,13 @@ struct ContentView: View {
                     HostRow(host: host)
                 }.buttonStyle(.plain)
                 
-                if userSettings.hasEnabledDeathBurgerMode {
-                    Image("burger-de-la-mort").resizable()
-                } else {
-                    Button(action:{self.userSettings.hasEnabledDeathBurgerMode = true}) {
-                        Image(systemName: "smiley")
+                if mode == .dark {
+                    if userSettings.hasEnabledDeathBurgerMode {
+                        Image("burger-de-la-mort").resizable()
+                    } else {
+                        Button(action:{self.userSettings.hasEnabledDeathBurgerMode = true}) {
+                            Image(systemName: "smiley")
+                        }
                     }
                 }
                 Spacer()
