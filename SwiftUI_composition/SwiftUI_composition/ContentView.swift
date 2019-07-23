@@ -7,8 +7,20 @@
 //
 
 import SwiftUI
+import Combine
+
+class UserSettings : BindableObject {
+    
+    var willChange = PassthroughSubject<Void,Never>()
+    var hasEnabledDeathBurgerMode = false {
+        didSet {
+            willChange.send()
+        }
+    }
+}
 
 struct ContentView: View {
+    @ObjectBinding var userSettings = UserSettings()
     @State var host = hostList[0]
     var body: some View {
         NavigationView {
@@ -20,9 +32,17 @@ struct ContentView: View {
                 NavigationLink(destination: HostDetails(host: $host)) {
                     HostRow(host: host)
                 }.buttonStyle(.plain)
+                
+                if userSettings.hasEnabledDeathBurgerMode {
+                    Image("burger-de-la-mort").resizable()
+                } else {
+                    Button(action:{self.userSettings.hasEnabledDeathBurgerMode = true}) {
+                        Image(systemName: "smiley")
+                    }
+                }
                 Spacer()
             }
-                .navigationBarTitle("")
+            .navigationBarTitle("")
                 .navigationBarHidden(true)
         }
     }
