@@ -19,7 +19,7 @@ let hostList:[Host] = [
 ]
 
 struct Host {
-    let name:String
+    var name:String
     let imageName:String
     let bio:String
 }

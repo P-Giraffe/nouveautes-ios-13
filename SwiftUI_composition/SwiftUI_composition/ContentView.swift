@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+    @State var host = hostList[0]
     var body: some View {
         NavigationView {
             VStack {
@@ -17,8 +17,8 @@ struct ContentView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(height:100)
-                NavigationLink(destination: HostDetails(host: hostList[0])) {
-                    HostRow(host: hostList[0])
+                NavigationLink(destination: HostDetails(host: $host)) {
+                    HostRow(host: host)
                 }.buttonStyle(.plain)
                 Spacer()
             }
