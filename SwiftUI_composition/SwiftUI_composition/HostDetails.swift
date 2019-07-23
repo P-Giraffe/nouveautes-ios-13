@@ -9,17 +9,18 @@
 import SwiftUI
 
 struct HostDetails: View {
+    var host:Host
     @State var displayHelp:Bool = false
     var body: some View {
         VStack {
-            Image("achabat")
+            Image(host.imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
             if displayHelp == true {
                 Text("OK, j'appelle le Grand Miam!")
             }
             Spacer()
-        }.navigationBarTitle("Alain Chabat")
+        }.navigationBarTitle(host.name)
             .navigationBarItems(trailing: Button(action: { self.displayHelp.toggle() }, label: { Text("Aide")}))
     }
 }
@@ -27,7 +28,7 @@ struct HostDetails: View {
 #if DEBUG
 struct HostDetails_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationView { HostDetails() }
+        NavigationView { HostDetails(host:hostList[0]) }
     }
 }
 #endif

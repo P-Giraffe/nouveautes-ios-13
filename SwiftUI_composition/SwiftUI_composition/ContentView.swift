@@ -17,8 +17,8 @@ struct ContentView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(height:100)
-                NavigationLink(destination: HostDetails()) {
-                    HostRow(host: Host(name: "Alain Chabat", imageName: "achabat", bio: ""))
+                NavigationLink(destination: HostDetails(host: hostList[0])) {
+                    HostRow(host: hostList[0])
                 }.buttonStyle(.plain)
                 Spacer()
             }
