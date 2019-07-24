@@ -16,6 +16,7 @@
 		F81DD0DA22E61B4600F10370 /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81DD0D922E61B4600F10370 /* Host.swift */; };
 		F86E656822E6261000528804 /* HostRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E656722E6261000528804 /* HostRow.swift */; };
 		F86E656A22E6277E00528804 /* HostDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86E656922E6277E00528804 /* HostDetails.swift */; };
+		F87DB4FA22E8ED3D0007AB40 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87DB4F922E8ED3D0007AB40 /* MapView.swift */; };
 		F8D789B222E8B6CD006FBB9E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D789B122E8B6CD006FBB9E /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		F81DD0D922E61B4600F10370 /* Host.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Host.swift; sourceTree = "<group>"; };
 		F86E656722E6261000528804 /* HostRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostRow.swift; sourceTree = "<group>"; };
 		F86E656922E6277E00528804 /* HostDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostDetails.swift; sourceTree = "<group>"; };
+		F87DB4F922E8ED3D0007AB40 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		F8D789B122E8B6CD006FBB9E /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				F8D789B122E8B6CD006FBB9E /* ImagePicker.swift */,
+				F87DB4F922E8ED3D0007AB40 /* MapView.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F86E656822E6261000528804 /* HostRow.swift in Sources */,
+				F87DB4FA22E8ED3D0007AB40 /* MapView.swift in Sources */,
 				F81DD0C622E6159800F10370 /* AppDelegate.swift in Sources */,
 				F86E656A22E6277E00528804 /* HostDetails.swift in Sources */,
 				F8D789B222E8B6CD006FBB9E /* ImagePicker.swift in Sources */,

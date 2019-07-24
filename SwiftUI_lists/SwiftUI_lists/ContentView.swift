@@ -40,6 +40,9 @@ struct ContentView: View {
                     }
                 }
                 EditButton()
+                NavigationLink(destination: MapView()) {
+                    Text("Se rendre aux studios")
+                }
             }
             .navigationBarTitle("")
             .navigationBarHidden(true)
