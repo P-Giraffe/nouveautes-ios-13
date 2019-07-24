@@ -10,8 +10,9 @@ import SwiftUI
 import UIKit
 
 struct ImagePicker: UIViewControllerRepresentable {
-    @Binding var image:Image?
     @Binding var shouldDisplayPicker:Bool
+    @Binding var pickedImage:Image?
+    
     func makeUIViewController(context: UIViewControllerRepresentableContext<ImagePicker>) -> UIImagePickerController {
         let imagePicker = UIImagePickerController()
         imagePicker.sourceType = .photoLibrary
@@ -27,19 +28,20 @@ struct ImagePicker: UIViewControllerRepresentable {
         return Coordinator(imagePicker: self)
     }
     
-    class Coordinator: NSObject, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    class Coordinator:NSObject, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+        let imagePicker:ImagePicker
         init(imagePicker:ImagePicker) {
             self.imagePicker = imagePicker
         }
-        let imagePicker:ImagePicker
         func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
             if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
-
+                self.imagePicker.pickedImage = Image(uiImage: image)
             }
+            self.imagePicker.shouldDisplayPicker = false
         }
         
         func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-            
+            self.imagePicker.shouldDisplayPicker = false
         }
     }
 }
@@ -49,7 +51,7 @@ struct ImagePicker_Previews: PreviewProvider {
     @State static var image:Image? = nil
     @State static var presentPicker:Bool = false
     static var previews: some View {
-        ImagePicker(image: $image, shouldDisplayPicker: $presentPicker)
+        ImagePicker(shouldDisplayPicker: $presentPicker, pickedImage: $image)
     }
 }
 #endif

@@ -32,7 +32,7 @@ struct HostDetails: View {
         .navigationBarTitle(host.name)
         .navigationBarItems(trailing: Button(action: { self.displayHelp.toggle() }, label: { Text("Aide")}))
         .sheet(isPresented: $shouldPickImage) {
-            ImagePicker(image: self.$pickedImage, shouldDisplayPicker: self.$shouldPickImage)
+            ImagePicker(shouldDisplayPicker: self.$shouldPickImage, pickedImage: self.$pickedImage)
         }
     }
 }
