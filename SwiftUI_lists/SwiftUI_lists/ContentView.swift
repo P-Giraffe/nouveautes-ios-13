@@ -11,7 +11,7 @@ import Combine
 
 
 struct ContentView: View {
-    @State var hostList = demoHostList
+    @State var hostList:[Host]
     var body: some View {
         NavigationView {
             VStack {
@@ -58,7 +58,7 @@ struct ContentView: View {
 #if DEBUG
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(hostList: demoHostList)
     }
 }
 #endif
