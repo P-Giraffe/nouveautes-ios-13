@@ -25,16 +25,24 @@ struct ContentView: View {
                         NavigationLink(destination: HostDetails(host: host)) {
                             HostRow(host: host)
                         }
-                    }.onDelete(perform: deleteHost)
+                    }
+                    .onDelete(perform: deleteHost)
+                    .onMove(perform: moveHost)
+                    
                 }
+                EditButton()
             }
             .navigationBarTitle("")
-                .navigationBarHidden(true)
+            .navigationBarHidden(true)
         }
     }
     
     func deleteHost(at indexes:IndexSet) {
         hostList.remove(atOffsets: indexes)
+    }
+    
+    func moveHost(from indexes:IndexSet, to destination:Int) {
+        hostList.move(fromOffsets: indexes, toOffset: destination)
     }
 }
 
