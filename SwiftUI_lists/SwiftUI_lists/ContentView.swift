@@ -21,14 +21,23 @@ struct ContentView: View {
                     .frame(height:100)
                 
                 List {
-                    ForEach(hostList, id: \.name) { host in
-                        NavigationLink(destination: HostDetails(host: host)) {
-                            HostRow(host: host)
+                    Section(header: Text("Saison 1")) {
+                        ForEach(hostList, id: \.name) { host in
+                            NavigationLink(destination: HostDetails(host: host)) {
+                                HostRow(host: host)
+                            }
+                        }
+                        .onDelete(perform: deleteHost)
+                        .onMove(perform: moveHost)
+                    }
+                    
+                    Section(header: Text("Saison 2")) {
+                        ForEach(hostList, id: \.name) { host in
+                            NavigationLink(destination: HostDetails(host: host)) {
+                                HostRow(host: host)
+                            }
                         }
                     }
-                    .onDelete(perform: deleteHost)
-                    .onMove(perform: moveHost)
-                    
                 }
                 EditButton()
             }
