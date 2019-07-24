@@ -20,10 +20,12 @@ struct ContentView: View {
                     .aspectRatio(contentMode: .fit)
                     .frame(height:100)
                 
-                List(hostList, id: \.name) { host in
-                    NavigationLink(destination: HostDetails(host: host)) {
-                        HostRow(host: host)
-                    }
+                List {
+                    ForEach(hostList, id: \.name) { host in
+                        NavigationLink(destination: HostDetails(host: host)) {
+                            HostRow(host: host)
+                        }
+                    }.onDelete(perform: deleteHost)
                 }
             }
             .navigationBarTitle("")
@@ -31,6 +33,9 @@ struct ContentView: View {
         }
     }
     
+    func deleteHost(at indexes:IndexSet) {
+        hostList.remove(atOffsets: indexes)
+    }
 }
 
 #if DEBUG
