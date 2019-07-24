@@ -8,7 +8,7 @@
 
 import Foundation
 
-let hostList:[Host] = [
+let demoHostList:[Host] = [
     Host(name:"Alain Chabat", imageName:"achabat", bio:"Alain Chabat est un acteur, réalisateur, scénariste, humoriste, producteur de cinéma et animateur de télévision français, né le 24 novembre 1958 à Oran (Algérie)."),
     Host(name:"Laurent Baffie", imageName:"lbaffie", bio:"Laurent Baffie, né le 18 avril 1958 à Montreuil (Seine-Saint-Denis), est un humoriste, animateur de radio et de télévision, auteur et metteur en scène de théâtre et écrivain français."),
     Host(name:"Marina Foïs", imageName:"mfois", bio:"Marina Foïs, née le 21 janvier 1970 à Boulogne-Billancourt, est une actrice française. Elle est révélée durant les années 1990 en tant que membre de la troupe les Robins des Bois, qui se produit sur scène et sur les chaînes Comédie ! et Canal+."),

@@ -28,7 +28,7 @@ struct HostDetails: View {
 
 #if DEBUG
 struct HostDetails_Previews: PreviewProvider {
-    @State static var host = hostList[0]
+    @State static var host = demoHostList[0]
     static var previews: some View {
         NavigationView { HostDetails(host:host) }
     }

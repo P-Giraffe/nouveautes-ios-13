@@ -11,7 +11,7 @@ import Combine
 
 
 struct ContentView: View {
-    @State var host = hostList[0]
+    @State var host = demoHostList[0]
     var body: some View {
         NavigationView {
             VStack {
