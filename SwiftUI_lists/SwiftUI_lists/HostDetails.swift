@@ -11,18 +11,29 @@ import SwiftUI
 struct HostDetails: View {
     var host:Host
     @State var displayHelp:Bool = false
+    @State var shouldPickImage = false
+    @State var pickedImage:Image? = nil
     var body: some View {
         VStack {
-            Image(host.imageName)
+            (pickedImage == nil ? Image(host.imageName) : pickedImage!)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
             if displayHelp == true {
                 Text("OK, j'appelle le Grand Miam!")
             }
+            Button(action: {
+                self.shouldPickImage = true
+            }) {
+                Text("Choisir image")
+            }
             
             Spacer()
-        }.navigationBarTitle(host.name)
-            .navigationBarItems(trailing: Button(action: { self.displayHelp.toggle() }, label: { Text("Aide")}))
+        }
+        .navigationBarTitle(host.name)
+        .navigationBarItems(trailing: Button(action: { self.displayHelp.toggle() }, label: { Text("Aide")}))
+        .sheet(isPresented: $shouldPickImage) {
+            ImagePicker(image: self.$pickedImage, shouldDisplayPicker: self.$shouldPickImage)
+        }
     }
 }
 
