@@ -20,13 +20,11 @@ struct ContentView: View {
                     .aspectRatio(contentMode: .fit)
                     .frame(height:100)
                 
-                ForEach(hostList, id: \.name) { host in
+                List(hostList, id: \.name) { host in
                     NavigationLink(destination: HostDetails(host: host)) {
                         HostRow(host: host)
-                    }.buttonStyle(.plain)
+                    }
                 }
-                
-                Spacer()
             }
             .navigationBarTitle("")
                 .navigationBarHidden(true)
