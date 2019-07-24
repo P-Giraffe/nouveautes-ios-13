@@ -11,7 +11,7 @@ import Combine
 
 
 struct ContentView: View {
-    @State var host = demoHostList[0]
+    @State var hostList = demoHostList
     var body: some View {
         NavigationView {
             VStack {
@@ -19,9 +19,12 @@ struct ContentView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(height:100)
-                NavigationLink(destination: HostDetails(host: host)) {
-                    HostRow(host: host)
-                }.buttonStyle(.plain)
+                
+                ForEach(hostList, id: \.name) { host in
+                    NavigationLink(destination: HostDetails(host: host)) {
+                        HostRow(host: host)
+                    }.buttonStyle(.plain)
+                }
                 
                 Spacer()
             }
