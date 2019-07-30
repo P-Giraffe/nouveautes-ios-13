@@ -8,6 +8,10 @@
 
 import UIKit
 
+#if !targetEnvironment(macCatalyst)
+import ARKit
+#endif
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {

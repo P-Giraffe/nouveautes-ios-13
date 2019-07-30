@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14835.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14845" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="mac" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14790.5"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14799.2"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -14,25 +14,25 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DarkMode" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="QoM-eu-GY8">
-                                <rect key="frame" x="10" y="44" width="355" height="98"/>
+                                <rect key="frame" x="10" y="0.0" width="780" height="98"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="98" id="GXn-4F-mhp"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Devenez créateur d'apps mobiles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2DX-Pe-8P8">
-                                <rect key="frame" x="5" y="135" width="365" height="31.333333333333343"/>
+                                <rect key="frame" x="5" y="91" width="790" height="31.5"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="2ba-t2-j10">
-                                <rect key="frame" x="20" y="176.33333333333337" width="335" height="350"/>
+                                <rect key="frame" x="20" y="132.5" width="760" height="350"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nxz-dM-44w">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="83.666666666666671"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="760" height="84"/>
                                         <color key="backgroundColor" name="PGF_purple"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <state key="normal" title="Cours iOS">
@@ -40,7 +40,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vx3-hr-AeN">
-                                        <rect key="frame" x="0.0" y="88.666666666666657" width="335" height="84"/>
+                                        <rect key="frame" x="0.0" y="89" width="760" height="83.5"/>
                                         <color key="backgroundColor" name="PGF_purple"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <state key="normal" title="Cours Android">
@@ -48,7 +48,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UXv-A4-0zT">
-                                        <rect key="frame" x="0.0" y="177.66666666666666" width="335" height="83.666666666666657"/>
+                                        <rect key="frame" x="0.0" y="177.5" width="760" height="84"/>
                                         <color key="backgroundColor" name="PGF_purple"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <state key="normal" title="Cours Git">
@@ -56,7 +56,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rWR-VO-fSs">
-                                        <rect key="frame" x="0.0" y="266.33333333333337" width="335" height="83.666666666666686"/>
+                                        <rect key="frame" x="0.0" y="266.5" width="760" height="83.5"/>
                                         <color key="backgroundColor" name="PGF_purple"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <state key="normal" title="Coaching">
@@ -69,7 +69,7 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="748" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHO-qI-WDl">
-                                <rect key="frame" x="20" y="531.33333333333337" width="335" height="241.66666666666663"/>
+                                <rect key="frame" x="20" y="487.5" width="760" height="107.5"/>
                                 <string key="text">Créez vos propres apps pour iPhone et Android
 Tout ce que vous devez savoir pour apprendre à programmer des applications mobiles, dans des cours accessibles à tous.</string>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
