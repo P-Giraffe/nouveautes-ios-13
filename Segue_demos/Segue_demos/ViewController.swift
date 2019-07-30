@@ -20,17 +20,16 @@ class ViewController: UIViewController {
     }
     
     @IBAction func button2Touched() {
-        guard let destinationVC = storyboard?.instantiateViewController(identifier: "DetailsViewController") as? DetailsViewController  else { return }
-        
-        destinationVC.textToDisplay = inputText
+        guard let destinationVC = storyboard?.instantiateViewController(identifier: "DetailsViewController", creator: { coder in
+            return DetailsViewController(coder: coder, text: self.inputText)
+        }) else { return }
+
         present(destinationVC, animated: true, completion: nil)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "segue1",
-            let destination = segue.destination as? DetailsViewController {
-            destination.textToDisplay = inputText
-        }
+    @IBSegueAction
+    func prepareDetailsViewController(coder:NSCoder) -> DetailsViewController? {
+        return DetailsViewController(coder: coder, text: inputText)
     }
 }
 

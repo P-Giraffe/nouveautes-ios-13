@@ -19,7 +19,7 @@
                                 <rect key="frame" x="141" y="146" width="132" height="30"/>
                                 <state key="normal" title="Segue vers ecran 2"/>
                                 <connections>
-                                    <segue destination="tYM-91-LLa" kind="presentation" identifier="segue1" id="nQK-Ty-0hA"/>
+                                    <segue destination="tYM-91-LLa" kind="presentation" identifier="segue1" destinationCreationSelector="prepareDetailsViewControllerWithCoder:" id="nQK-Ty-0hA"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GTt-eN-OLG">

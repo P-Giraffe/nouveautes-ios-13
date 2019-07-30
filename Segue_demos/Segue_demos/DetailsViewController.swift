@@ -9,12 +9,18 @@
 import UIKit
 
 class DetailsViewController: UIViewController {
-    var textToDisplay:String? {
-        didSet {
-            updateDisplay()
-        }
-    }
+    let textToDisplay:String
     @IBOutlet weak var ui_label: UILabel!
+    
+    init?(coder:NSCoder, text:String) {
+        self.textToDisplay = text
+        super.init(coder: coder)
+    }
+    
+    required init?(coder: NSCoder) {
+        self.textToDisplay = ""
+        super.init(coder: coder)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

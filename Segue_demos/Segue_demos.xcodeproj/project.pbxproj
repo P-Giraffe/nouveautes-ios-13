@@ -61,11 +61,11 @@
 				F8FF9D5822F03DD600B2D83F /* AppDelegate.swift */,
 				F8FF9D5A22F03DD600B2D83F /* SceneDelegate.swift */,
 				F8FF9D5C22F03DD700B2D83F /* ViewController.swift */,
+				F8FF9D6C22F03FF600B2D83F /* DetailsViewController.swift */,
 				F8FF9D5E22F03DD700B2D83F /* Main.storyboard */,
 				F8FF9D6122F03DD900B2D83F /* Assets.xcassets */,
 				F8FF9D6322F03DD900B2D83F /* LaunchScreen.storyboard */,
 				F8FF9D6622F03DD900B2D83F /* Info.plist */,
-				F8FF9D6C22F03FF600B2D83F /* DetailsViewController.swift */,
 			);
 			path = Segue_demos;
 			sourceTree = "<group>";
